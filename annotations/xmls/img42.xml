@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>img42.jpeg</filename>
+	<path>/home/akshay/Music/images/img42.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>swift desire</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>624</xmin>
+			<ymin>252</ymin>
+			<xmax>1280</xmax>
+			<ymax>717</ymax>
+		</bndbox>
+	</object>
+</annotation>

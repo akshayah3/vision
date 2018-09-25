@@ -160,7 +160,7 @@ def sort_by_field(box_mask_list, field,
 
 def non_max_suppression(box_mask_list,
                         max_output_size=10000,
-                        iou_threshold=1.0,
+                        iou_threshold=0.01,
                         score_threshold=-10.0):
   """Non maximum suppression.
 

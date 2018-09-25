@@ -315,7 +315,7 @@ def draw_bounding_boxes_on_image_tensors(images,
                                          instance_masks=None,
                                          keypoints=None,
                                          max_boxes_to_draw=20,
-                                         min_score_thresh=0.2,
+                                         min_score_thresh=0.9,
                                          use_normalized_coordinates=True):
   """Draws bounding boxes, masks, and keypoints on batch of image tensors.
 
@@ -549,7 +549,7 @@ def visualize_boxes_and_labels_on_image_array(
     keypoints=None,
     use_normalized_coordinates=False,
     max_boxes_to_draw=20,
-    min_score_thresh=.5,
+    min_score_thresh=.9,
     agnostic_mode=False,
     line_thickness=4,
     groundtruth_box_visualization_color='black',

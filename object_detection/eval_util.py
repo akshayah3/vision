@@ -74,7 +74,7 @@ def visualize_detection_results(result_dict,
                                 agnostic_mode=False,
                                 show_groundtruth=False,
                                 groundtruth_box_visualization_color='black',
-                                min_score_thresh=.5,
+                                min_score_thresh=.9,
                                 max_num_predictions=20,
                                 skip_scores=False,
                                 skip_labels=False,
@@ -555,7 +555,7 @@ def result_dict_for_single_example(image,
     detection_masks_reframed = ops.reframe_box_masks_to_image_masks(
         detection_masks, detection_boxes, image_shape[1], image_shape[2])
     detection_masks_reframed = tf.cast(
-        tf.greater(detection_masks_reframed, 0.5), tf.uint8)
+        tf.greater(detection_masks_reframed, 0.9), tf.uint8)
     output_dict[detection_fields.detection_masks] = detection_masks_reframed
   if detection_fields.detection_keypoints in detections:
     detection_keypoints = detections[detection_fields.detection_keypoints][0]
